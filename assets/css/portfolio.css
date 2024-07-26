@@ -227,8 +227,8 @@ a:hover {
 
 .project {
     animation: fadeInUp 3s ease-in-out;
-    background-color: #96b6c4;
-    border: 1px solid #25596f;
+    background-color: #001c3b74;
+    border: 1px solid #0c2643;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(29, 90, 109, 0.975);
@@ -237,7 +237,7 @@ a:hover {
 }
 
 .project h3 {
-    color: #06374c;
+    color: #f5e0d0;
     margin-bottom: 10px;
     font-size: 1.25em;
     font-weight: bold;
@@ -248,8 +248,8 @@ a:hover {
     font-style: italic;
     font-family: Tahoma;
     font-weight: 700;
-    color: #3a545f;
-    -webkit-text-stroke: .5px #95b1bcf3;
+    color: #958383;
+    -webkit-text-stroke: .5px #28476bb3;
 }
 
 .project ul li {
@@ -257,7 +257,7 @@ a:hover {
     font-style: normal;
     font-weight: 300;
     text-align: center;
-    color: #06374c;
+    color: #f5e0d0;
 }
 
 /* Icon */
@@ -353,7 +353,7 @@ a:hover {
     -moz-animation: bg 60s linear infinite;
     -webkit-animation: bg 60s linear infinite;
     -ms-animation: bg 60s linear infinite;
-    animation: bg 60s linear infinite;
+    animation: bg s linear infinite;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -364,7 +364,7 @@ a:hover {
     transform: translate3d(0, 0, 0);
     /* Set your background with this */
 
-    background: #348cb2 url("images/bg.jpg") bottom left;
+    background: url("images/bg1.jpg");
     background-repeat: repeat-x;
     height: 100%;
     left: 0;
