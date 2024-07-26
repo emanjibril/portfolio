@@ -194,7 +194,7 @@ body,
 input,
 select,
 textarea {
-    color: #fff;
+    color: #f5e0d0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15pt;
     font-weight: 300 !important;
@@ -246,14 +246,14 @@ a:hover {
 .project p {
     margin: 0;
     font-style: italic;
-    font-family: Tahoma;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     color: #958383;
     -webkit-text-stroke: .5px #28476bb3;
 }
 
 .project ul li {
-    font-family: Verdana;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
     text-align: center;
