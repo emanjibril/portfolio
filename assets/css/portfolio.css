@@ -194,12 +194,12 @@ body,
 input,
 select,
 textarea {
-    color: #06374c;
+    color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15pt;
     font-weight: 300 !important;
     letter-spacing: -0.025em;
-    line-height: 1.75em;
+    line-height: 1.55em;
 }
 
 a {
@@ -237,6 +237,7 @@ a:hover {
 }
 
 .project h3 {
+    color: #06374c;
     margin-bottom: 10px;
     font-size: 1.25em;
     font-weight: bold;
@@ -247,7 +248,7 @@ a:hover {
     font-style: italic;
     font-family: Tahoma;
     font-weight: 700;
-    color: #06374c;
+    color: #3a545f;
     -webkit-text-stroke: .5px #95b1bcf3;
 }
 
