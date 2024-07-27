@@ -140,6 +140,7 @@ table {
 
 body {
     -webkit-text-size-adjust: none;
+    overflow: scroll;
 }
 
 mark {
@@ -258,6 +259,8 @@ a:hover {
     font-weight: 300;
     text-align: center;
     color: #f5e0d0;
+    overflow: visible;
+
 }
 
 /* Icon */
@@ -1124,6 +1127,7 @@ a:hover {
     select,
     textarea {
         font-size: 11pt;
+        overflow: visible;
         overflow-y: scroll;
     }
 
@@ -1207,6 +1211,7 @@ a:hover {
 
     .project ul li {
         font-size: 1em;
+        overflow: visible;
         overflow-y: scroll;
     }
 

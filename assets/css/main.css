@@ -222,9 +222,18 @@ h1 {
 }
 
 h3 {
+	color: #060b37;
+	/*-webkit-text-stroke: 1px #0e111d;*/
+	text-shadow: 0 0 5px rgba(210, 205, 180, 0.7),
+		/* light glow */
+		0 0 8px rgba(181, 177, 164, 0.5);
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: x-large;
+	max-width: 650px;
+	margin: auto;
+	font-weight: 600;
+	transform: scaleY(1.5px);
 }
 
 /* Icon */
@@ -1158,6 +1167,10 @@ h3 {
 
 	#header h1 {
 		font-size: 2.5em;
+	}
+
+	#header h3 {
+		font-size: 2em;
 	}
 
 	#header p {
