@@ -1124,6 +1124,7 @@ a:hover {
     select,
     textarea {
         font-size: 11pt;
+        overflow-y: scroll;
     }
 
     /* BG */
@@ -1202,6 +1203,11 @@ a:hover {
 
     #header h1 {
         font-size: 2.5em;
+    }
+
+    .project ul li {
+        font-size: 1em;
+        overflow-y: scroll;
     }
 
 
