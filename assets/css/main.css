@@ -351,7 +351,7 @@ h3 {
 	transform: translate3d(0, 0, 0);
 	/* Set your background with this */
 
-	background: #348cb2 url("images/bg1.jpg") bottom left;
+	background: #021B39 url("images/bg1.jpg") bottom left;
 	background-repeat: repeat-x;
 	height: 100%;
 	left: 0;
@@ -849,6 +849,7 @@ h3 {
 	position: absolute;
 	text-align: center;
 	width: 100%;
+	margin-bottom: 2px;
 }
 
 #footer nav li {

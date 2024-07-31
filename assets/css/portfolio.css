@@ -7,6 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+html {
+    overflow-y: scroll;
+}
+
 html,
 body,
 div,
@@ -97,6 +101,15 @@ video {
     vertical-align: baseline;
 }
 
+html,
+body,
+head {
+    overflow: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
 article,
 aside,
 details,
@@ -140,7 +153,7 @@ table {
 
 body {
     -webkit-text-size-adjust: none;
-    overflow: scroll;
+    overflow: visible;
 }
 
 mark {
@@ -166,6 +179,8 @@ textarea {
 
 html {
     box-sizing: border-box;
+    overflow-y: auto;
+    overflow: visible;
 }
 
 *,
@@ -220,20 +235,23 @@ a:hover {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 260px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    overflow: visible;
+    top: 0;
 }
 
 .project {
     animation: fadeInUp 3s ease-in-out;
     background-color: #001c3b74;
     border: 1px solid #0c2643;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(29, 90, 109, 0.975);
     text-align: center;
+    margin-top: 50px;
 
 }
 
@@ -268,6 +286,7 @@ a:hover {
 .icon {
     text-decoration: none;
     position: relative;
+    margin-top: 30px;
 }
 
 .icon:before {
@@ -367,7 +386,7 @@ a:hover {
     transform: translate3d(0, 0, 0);
     /* Set your background with this */
 
-    background: url("images/bg1.jpg");
+    background: #021B39 url("images/bg1.jpg");
     background-repeat: repeat-x;
     height: 100%;
     left: 0;
@@ -508,7 +527,7 @@ a:hover {
 /* Main */
 
 #main {
-    height: 30%;
+    height: 20%;
     left: 0;
     position: fixed;
     text-align: center;
@@ -762,9 +781,10 @@ a:hover {
     opacity: 0;
     position: relative;
     text-align: center;
-    top: -1em;
+    top: 1em;
     vertical-align: middle;
     width: 90%;
+    margin-top: 20px;
 }
 
 #header h1 {
@@ -1031,12 +1051,13 @@ a:hover {
 @media screen and (max-width: 1280px) {
 
     /* Basic */
-
+    html,
     body,
-    input,
     select,
-    textarea {
-        font-size: 12pt;
+    textarea,
+    input {
+        overflow: visible;
+        overflow-y: scroll;
     }
 
     /* BG */
@@ -1110,6 +1131,10 @@ a:hover {
         background-size: 750px auto;
         width: 2250px;
     }
+
+    .project ul li {
+        overflow: visible;
+    }
 }
 
 /* Mobile */
@@ -1117,6 +1142,14 @@ a:hover {
 @media screen and (max-width: 736px) {
 
     /* Basic */
+    html,
+    body,
+    input,
+    select,
+    textarea {
+        overflow: visible;
+        overflow-y: auto;
+    }
 
     body {
         min-width: 320px;
@@ -1209,18 +1242,31 @@ a:hover {
         font-size: 2.5em;
     }
 
+    .project ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
     .project ul li {
         font-size: 1em;
         overflow: visible;
-        overflow-y: scroll;
     }
-
-
 }
 
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
+
+    html,
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 11pt;
+        overflow: visible;
+        overflow-y: auto;
+    }
 
     /* BG */
 
@@ -1298,5 +1344,16 @@ a:hover {
 
     #header nav {
         padding: 0 1em;
+    }
+
+    .project ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .project ul li {
+        font-size: 1em;
+        overflow: visible;
     }
 }
