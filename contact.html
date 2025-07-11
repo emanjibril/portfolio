@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/Logo.png" alt="Logo">
+        <h1>EMAN JIBRIL</h1>
+        <p>B.S Computer Science | Class of 2026</p>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">
+            <div class="icon">
+                <img src="images/homeIcon.png" alt="Home">
+            </div>
+            Home
+        </a>
+        <a href="projects.html">
+            <div class="icon">
+                <img src="images/portfolioIcon.png" alt="Projects">
+            </div>
+            Projects
+        </a>
+    </div>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <div class="text">
+        <p>Feel free to contact me via <a href="https://www.linkedin.com/in/emanjibril" target="_blank">LinkedIn</a> or
+            using the form below!</p>
+        <p>My email is <a href="mailto:ejibril6@gmail.com">ejibril6@gmail.com</a></p>
+    </div>
+
+    <form action="mailto:ejibril6@gmail.com" method="post" enctype="typle/plain">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="form-name">Name:</label>
+            <input type="text" name="username" id="form-name" required>
+
+            <label for="form-email">Email Address:</label>
+            <input type="email" name="emailaddress" id="form-email" required>
+
+            <label for="form-tel">Phone Number:</label>
+            <input type="tel" name="telephone" id="form-tel" placeholder="Optional">
+        </fieldset>
+
+        <fieldset>
+            <legend>Leave any comments, questions, concerns here!</legend>
+            <label for="form-message">Your Message:</label>
+            <textarea name="message" id="form-message" rows="4" cols="60" maxlength="500"
+                placeholder="Type here..."></textarea>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Clear Form">
+        </p>
+    </form>
+</body>
+
+</html>

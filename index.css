@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: #b3b3bd;
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.header,
+.icon-links {
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #b3b3bd;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #b3b3bd;
+    margin-top: 0.5rem;
+}
+
+.header img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-top: 1em;
+}
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.icon-links a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #606060;
+    transition: transform 0.3s ease;
+}
+
+.icon-links a:hover {
+    transform: scale(1.1);
+}
+
+.icon-links .icon {
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.icon-links a:hover .icon {
+    background-color: #a9a9a9;
+}
+
+.icon-links img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.icon-links span {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #c7c7c7;
+}

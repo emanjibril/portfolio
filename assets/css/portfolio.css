@@ -281,6 +281,17 @@ a:hover {
 
 }
 
+.button{
+    background-color:transparent;
+    border:2px solid #f5e0d0;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: ;
+}
+
 /* Icon */
 
 .icon {
